@@ -1,0 +1,27 @@
+{
+  "name": "BurgerBite",
+  "version": "1.0.0",
+  "description": "A restaurant app that lets users input the names of burgers they'd like to eat.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjthornberry/BurgerBite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wjthornberry/BurgerBite/issues"
+  },
+  "homepage": "https://github.com/wjthornberry/BurgerBite#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.9",
+    "mysql": "^2.14.1"
+  }
+}
