@@ -35,7 +35,7 @@ var orm = {
             cb(result)
         });
     },
-    insertOne: function(tableInput, cb) {
+    insertOne: function(tableInput, userInput, cb) {
         var queryString = `INSERT INTO ${tableInput} SET ?`;
         connection.query(queryString, {burger_name: userInput.burger_name, devoured: false}, function(err, result) {
             if (err) throw err;
@@ -46,7 +46,7 @@ var orm = {
     },
     // An example of objColVals would be {name: burger, eaten: true}
     updateOne: function(tableInput, objColVals, condition, cb) {
-        var queryString = `UPDATE ${tableInput} SET ${objColVals(objColVals)} WHERE ${condition}`;
+        var queryString = `UPDATE ${tableInput} SET ${objToSql(objColVals)} WHERE ${condition}`;
         
         console.log(queryString);
         connection.query(queryString, function (err, result) {
