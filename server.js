@@ -15,7 +15,7 @@ var express        = require('express'),
     app.use(bodyParser.json({ type: "application/vnd.api+json" }));   
     
     // Serves static content from the public directory in the app
-    app.use(express.static('public');
+    app.use(express.static('public'));
 
     // override with POST having ?_method=DELETE
     app.use(methodOverride('_method'));
