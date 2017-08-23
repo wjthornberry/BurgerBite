@@ -1,5 +1,6 @@
 INSERT INTO burgers (burger_name, devoured, date) 
 VALUES
+('Olympia Restaurant Cheeseborger — Chicago', false, '2017-08-22 00:00:01'),
 ('Au Cheval Burger - Chicago', false, '2017-08-21 00:00:01'),
 ('The Spotted Pig Burger - NYC', false, '2017-08-20 00:19:30'),
 ('Shake Shack - Everywhere', false, '2013-02-13 00:01:00'),
